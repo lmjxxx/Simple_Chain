@@ -89,5 +89,6 @@ if __name__ == "__main__":
     # print(blockchain.get_latest_block().show_block())
     
     blockchain.create_block("Transaction 2", blockchain.get_latest_block().hash, "Validator 2")
+    blockchain.create_block("Transaction 2", blockchain.get_latest_block().hash, "Validator 2")
     
     blockchain.show_chain()
