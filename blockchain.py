@@ -1,8 +1,6 @@
 '''
-
+create block, add block to chian, define block architecture
 '''
-
-import hashlib
 import time
 from utils import sha256
 
@@ -92,3 +90,4 @@ if __name__ == "__main__":
     blockchain.create_block("Transaction 2", blockchain.get_latest_block().hash, "Validator 2")
     
     blockchain.show_chain()
+    

@@ -28,6 +28,9 @@ class PoSConsensus:
         
         return selected_validator[0]
     
+    def validate_block(self, block):
+        
+        
 
 class StakingPool:
     def __init__(self):
