@@ -1,0 +1,16 @@
+
+src / 
+	main/ 			# 진입점
+	network/ 		# 네트워크 관련 코드
+		dht/ 		# kademlia DHT
+	blockchain/		# blockchain 관련 기능
+	
+	wallet/			# 지갑 및 트랜잭션
+
+	crypto/ 		# 해시 함수 (SHA-256 등)
+	db/			# 데이터 저장소 (블록체인 상태, 트랜잭션 기록 등)
+
+
+tests/
+
+scripts/

@@ -1,2 +1,3 @@
 # Simple_Chain
-PoS based Chain for Study
+Network : Kademlia DHT
+Consensus : Proof of Work
