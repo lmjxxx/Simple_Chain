@@ -1,16 +1,32 @@
 
 src / 
-	main/ 			# 진입점
-	network/ 		# 네트워크 관련 코드
-		dht/ 		# kademlia DHT
-	blockchain/		# blockchain 관련 기능
-	
-	wallet/			# 지갑 및 트랜잭션
-
-	crypto/ 		# 해시 함수 (SHA-256 등)
-	db/			# 데이터 저장소 (블록체인 상태, 트랜잭션 기록 등)
-
+	main/ 				# 진입점
+	network/ 			# 네트워크 관련 코드
+		Kademlia_DHT/ 			# kademlia DHT
+			node.py 	# 노드 식별 및 k-bucket 관리
+			routing.py 	# routing table, k-bucket 관리
+			protocol.py # kademlia protocol 
+			utils.py 	# utils
+		p2p/
+			p2p_Protocol.py # p2p protocol
+		transport/
+			UDP_TCP.py 	# UDP/TCP 통신
+	blockchain/			# blockchain 관련 기능
+		block.py 		# block 구조, 헤더, 머클 트리 등
+		chain.py 		# chain 구조, 블록 추가 및 검증
+		consensus.py 	# 합의 알고리즘 : PoW
+	wallet/				# 지갑 및 트랜잭션
+		keys.py 		# 키 생성 및 관리
+		transaction.py 	# 트랜잭션 생성 및 검증
+		utxo.py 		# UTXO 관리	
+	crypto/ 			# 해시 함수 (SHA-256 등)
+		hash.py 		# 해시 함수 구현
+		signature.py 	# 서명 생성 및 검증
+	db/					# 데이터 저장소 (블록체인 상태, 트랜잭션 기록 등)
+		storage.py 		# 데이터 저장소 관리	
 
 tests/
+	test.py				# 테스트 코드
 
 scripts/
+	run.py				# 실행 스크립트
